@@ -1,4 +1,5 @@
 package Net::TextMessage::Canada;
+use 5.006;
 use Moose;
 
 =head1 NAME
@@ -7,7 +8,7 @@ Net::TextMessage::Canada - determine the email address for a mobile phone
  
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
  
@@ -31,6 +32,10 @@ This module provides an easy interface to map a mobile phone to an
 email address to send them a text message.
 
 If this list becomes out of date, please send me updated details.
+
+=head2 IMPORTANT NOTE
+
+The functionality of the email-to-SMS gateway is carrier dependent.  That is to say: some carriers that appreciate you as a human being make it work seamlessly.  Other carriers that want to maximize their wallets may make receiving these messages expensive and awkward.  YMMV, IANAL, see store for details.
 
 =cut
  
